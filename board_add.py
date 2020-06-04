@@ -1,5 +1,5 @@
 #2017038059 배근영
-file = open("C:/Users/bscks/Desktop/testing/board.txt", "r+", encoding='UTF8')  # txt파일 오픈
+file = open("./django_test/templates/board.txt", "r+", encoding='UTF8')  # txt파일 오픈
 
 
 class board:
