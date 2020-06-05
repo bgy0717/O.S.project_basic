@@ -1,4 +1,4 @@
-#2017038059 배근영 게시판 내용추가
+#2017038059 배근영 - 게시판 내용추가
 file = open("./django_test/correction/board.txt", "r+", encoding='UTF8')  # txt파일 오픈
 
 
