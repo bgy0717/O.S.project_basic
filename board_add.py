@@ -23,3 +23,4 @@ while True:
         break
 bab.boardAdd(name, cont) #식당명, 내용으로 삽입
 file.close()
+
