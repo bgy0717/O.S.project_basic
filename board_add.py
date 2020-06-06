@@ -7,7 +7,7 @@ class board:
     cont = []   #건의사항
 
     def boardAdd(self, name, cont): #인자 O
-        with open("./django_test/correction/board.txt", "r+", encoding='UTF8') as file:
+        with open("./django_test/correction/board.txt", "a", encoding='UTF8') as file:
 
             file.write("\n"+str(name))
             file.write("\n"+str(cont))
