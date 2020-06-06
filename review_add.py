@@ -59,4 +59,7 @@ class review:
 
 
 view = review()
+number = 0
+score = 0
+content = ''
 view.reviewAdd(number, score, content)
