@@ -5,7 +5,7 @@ class review:
     line = []
 
     def reviewAdd(self, num, score, cont): #연번, 별점, 내용 받아서 리뷰추가
-        file = 'C:/Users/bscks/Desktop/오픈소스과제/rest_test.csv'
+        file = 'res_data.csv'
         with open(file, 'r')as file:
             cs_rd = csv.reader(file)
             lines = []

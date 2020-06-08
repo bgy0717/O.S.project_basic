@@ -1,5 +1,5 @@
-#2017038059 배근영 - 게시판 내용추가
-file = open("./django_test/correction/board.txt", "r+", encoding='UTF8')  # txt파일 오픈
+
+#2017038059 배근영
 
 
 class board:
@@ -7,20 +7,11 @@ class board:
     cont = []   #건의사항
 
     def boardAdd(self, name, cont): #인자 O
-        global indexNum
-        file.write("\n"+str(name))
-        file.write("\n"+str(cont))
-        file.write("\n***************************")
-        self.name.append(name)
-        self.cont.append(cont)
+        with open("./django_test/correction/board.txt", "a", encoding='UTF8') as file:
 
-
-bab = board()
-rdstr = ""     #한줄씩 읽을변수
-while True:
-    rdstr = file.readline()
-    if rdstr == "":
-        break
-bab.boardAdd(name, cont) #식당명, 내용으로 삽입
-file.close()
+            file.write("\n"+str(name))
+            file.write("\n"+str(cont))
+            file.write("\n***************************")
+            self.name.append(name)
+            self.cont.append(cont)
 
